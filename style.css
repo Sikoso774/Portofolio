@@ -16,13 +16,16 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh; */
+    /* overflow: hidden; */
     background-color: black;
     color: white;
 
 }
 
+p {
+    color: white;
+}
 header{
     margin-top: 20px;
     position: fixed;
@@ -68,6 +71,7 @@ nav a.active{
 
 @media(max-width: 995px){
     nav{
+        display: none;
         position: absolute;
         top: 100%;
         right: 0;
@@ -96,6 +100,12 @@ nav a.active{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
     }
+}
+
+/* AJOUTER CECI dans style.css (hors media query) */
+nav {
+    display: flex; /* Assure que les liens sont traités comme une ligne */
+    align-items: center; /* Centre verticalement les liens dans la nav */
 }
 
 section{
@@ -143,8 +153,7 @@ span{
 }
 
 .home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+    transform: scale(1.05);
 }
 
 .social-icons a{
@@ -252,7 +261,7 @@ to {
         position: absolute;
         top: 0;
         right: 0;
-        weight: 40%;
+        width: 40%;
         border-left: 3px solid #b74b4b;
         border-bottom: 3px solid #b74b4b;
         border-bottom-left-radius: 2rem;
