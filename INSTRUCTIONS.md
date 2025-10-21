@@ -74,7 +74,7 @@ Replace the CV download button's onclick handler with a link to your actual CV P
 Replace the `ZK` placeholder in the profile circle:
 ```html
 <div class="profile-circle">
-    <img src="your-photo.jpg" alt="Zoléni Kokolo Zassi" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+    <img src="assets/images/photo_profile.jpg" alt="Zoléni Kokolo Zassi" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 </div>
 ```
 
